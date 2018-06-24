@@ -1,4 +1,8 @@
 package config;
 
-public class ConfigManager {
+public interface ConfigManager {
+
+    String nextItem();
+    boolean hasMoreItems();
+
 }

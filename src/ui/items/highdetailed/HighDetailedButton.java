@@ -5,7 +5,7 @@ import ui.items.UIItem;
 
 public class HighDetailedButton extends UIItem implements Button {
 
-    HighDetailedButton(int x, int y, String value) {
+    public HighDetailedButton(int x, int y, String value) {
         setX(x);
         setY(y);
         setValue(value);

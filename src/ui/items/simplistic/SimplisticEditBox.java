@@ -5,7 +5,7 @@ import ui.items.UIItem;
 
 public class SimplisticEditBox extends UIItem implements EditBox {
 
-    SimplisticEditBox(int x, int y, String value) {
+    public SimplisticEditBox(int x, int y, String value) {
         setX(x);
         setY(y);
         setValue(value);

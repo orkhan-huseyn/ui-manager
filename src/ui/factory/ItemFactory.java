@@ -5,7 +5,7 @@ import ui.items.EditBox;
 import ui.items.TextBox;
 
 public interface ItemFactory {
-    Button createButton();
-    EditBox createEditBox();
-    TextBox createTextBox();
+    Button createButton(int x, int y, String value);
+    EditBox createEditBox(int x, int y, String value);
+    TextBox createTextBox(int x, int y, String value);
 }

@@ -6,18 +6,15 @@ import ui.items.TextBox;
 
 public class FuturisticItemFactory implements ItemFactory {
 
-    @Override
-    public Button createButton() {
+    public Button createButton(int x, int y, String value) {
         return null;
     }
 
-    @Override
-    public EditBox createEditBox() {
+    public EditBox createEditBox(int x, int y, String value) {
         return null;
     }
 
-    @Override
-    public TextBox createTextBox() {
+    public TextBox createTextBox(int x, int y, String value) {
         return null;
     }
 }

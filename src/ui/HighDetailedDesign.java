@@ -10,11 +10,11 @@ public class HighDetailedDesign extends Design {
         this.itemFactory = itemFactory;
     }
 
-    void init() {
-        System.out.println("Initializing " + name);
-        button = itemFactory.createButton();
-        editBox = itemFactory.createEditBox();
-        textBox = itemFactory.createTextBox();
+    public void init() {
+        System.out.println("Initializing " + name + "...");
+//        button = itemFactory.createButton();
+//        editBox = itemFactory.createEditBox();
+//        textBox = itemFactory.createTextBox();
     }
 
 }

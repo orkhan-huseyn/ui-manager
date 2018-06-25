@@ -5,7 +5,7 @@ import ui.items.UIItem;
 
 public class SimplisticButton extends UIItem implements Button {
 
-    SimplisticButton(int x, int y, String value) {
+    public SimplisticButton(int x, int y, String value) {
         setX(x);
         setY(y);
         setValue(value);

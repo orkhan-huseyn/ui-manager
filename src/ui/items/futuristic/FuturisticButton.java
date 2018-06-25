@@ -5,7 +5,7 @@ import ui.items.UIItem;
 
 public class FuturisticButton extends UIItem implements Button {
 
-    FuturisticButton(int x, int y, String value) {
+    public FuturisticButton(int x, int y, String value) {
         setX(x);
         setY(y);
         setValue(value);

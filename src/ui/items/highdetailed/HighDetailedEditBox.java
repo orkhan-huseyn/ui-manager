@@ -5,7 +5,7 @@ import ui.items.UIItem;
 
 public class HighDetailedEditBox extends UIItem implements EditBox {
 
-    HighDetailedEditBox(int x, int y, String value) {
+    public HighDetailedEditBox(int x, int y, String value) {
         setX(x);
         setY(y);
         setValue(value);

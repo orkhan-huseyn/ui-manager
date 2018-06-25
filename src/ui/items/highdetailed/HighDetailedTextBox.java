@@ -5,7 +5,7 @@ import ui.items.UIItem;
 
 public class HighDetailedTextBox extends UIItem implements TextBox {
 
-    HighDetailedTextBox(int x, int y, String value) {
+    public HighDetailedTextBox(int x, int y, String value) {
         setX(x);
         setY(y);
         setValue(value);

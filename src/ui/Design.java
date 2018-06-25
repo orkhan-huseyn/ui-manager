@@ -18,7 +18,7 @@ public abstract class Design {
 
     // should be implemented by subclasses
     // initializes specified UI style
-    abstract void init();
+    public abstract void init();
 
     public String getName() {
         return name;

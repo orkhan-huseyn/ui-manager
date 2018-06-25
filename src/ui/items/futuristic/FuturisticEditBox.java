@@ -5,7 +5,7 @@ import ui.items.UIItem;
 
 public class FuturisticEditBox extends UIItem implements EditBox {
 
-    FuturisticEditBox(int x, int y, String value) {
+    public FuturisticEditBox(int x, int y, String value) {
         setX(x);
         setY(y);
         setValue(value);

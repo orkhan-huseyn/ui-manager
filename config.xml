@@ -1,0 +1,12 @@
+<ui>
+    <Button>
+        <x>250</x>
+        <y>300</y>
+        <value>Click on me</value>
+    </Button>
+    <EditBox>
+        <x>250</x>
+        <y>300</y>
+        <value>Some text to edit</value>
+    </EditBox>
+</ui>

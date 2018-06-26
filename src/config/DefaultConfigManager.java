@@ -8,7 +8,7 @@ import java.util.Stack;
 public class DefaultConfigManager implements ConfigManager {
 
     private String filePath;
-    private Stack<String> lines;
+    private Stack<LineItem> lines;
 
     public DefaultConfigManager(String filePath) {
         this.filePath = filePath;
@@ -20,15 +20,18 @@ public class DefaultConfigManager implements ConfigManager {
         }
     }
 
-    public String nextItem() {
+    // pop and return last element
+    public LineItem nextItem() {
         return lines.pop();
     }
 
+    // go ahead if stack is not empty
     public boolean hasMoreItems() {
         return !lines.empty();
     }
 
-    public void readFile() throws IOException {
+    // reads lines from config file and adds it to stack
+    private void readFile() throws IOException {
 
         String line = null;
 
@@ -36,7 +39,19 @@ public class DefaultConfigManager implements ConfigManager {
         BufferedReader bufferedReader = new BufferedReader(fileReader);
 
         while ((line = bufferedReader.readLine()) != null) {
-            this.lines.push(line);
+
+            // split out the line by comma to get node name, coordinates and string value
+            String[] arr = line.split(",");
+
+            // string to integer conversion, remove white spaces and colons
+            int x_coord = Integer.parseInt(arr[2].split(":")[1].replaceAll("\\s+",""));
+            int y_coord = Integer.parseInt(arr[3].split(":")[1].replaceAll("\\s+",""));
+
+            // add new line item to the stack
+            this.lines.push(new LineItem(arr[0], x_coord, y_coord, arr[1]));
         }
+
+        // close the reader of course :)
+        bufferedReader.close();
     }
 }

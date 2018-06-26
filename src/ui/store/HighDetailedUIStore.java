@@ -9,7 +9,7 @@ import ui.factory.ItemFactory;
 public class HighDetailedUIStore extends UIStore {
 
     protected Design createDesign(ConfigManager config) {
-        ItemFactory itemFactory = new HighDetailedItemFactory();
+        ItemFactory itemFactory = new HighDetailedItemFactory(config);
         Design design = new HighDetailedDesign(itemFactory);
         design.setName("High Detailed Design");
         return design;

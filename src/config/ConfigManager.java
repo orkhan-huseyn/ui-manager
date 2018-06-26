@@ -1,7 +1,7 @@
 package config;
 public interface ConfigManager {
 
-    String nextItem();
+    LineItem nextItem();
     boolean hasMoreItems();
 
 }

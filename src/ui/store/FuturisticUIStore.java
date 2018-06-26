@@ -9,7 +9,7 @@ import ui.factory.ItemFactory;
 public class FuturisticUIStore extends UIStore {
 
     protected Design createDesign(ConfigManager config) {
-        ItemFactory itemFactory = new FuturisticItemFactory();
+        ItemFactory itemFactory = new FuturisticItemFactory(config);
         Design design = new FuturisticDesign(itemFactory);
         design.setName("Futuristic Design");
         return design;

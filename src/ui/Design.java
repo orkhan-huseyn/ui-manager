@@ -21,4 +21,12 @@ public abstract class Design {
     public void setName(String name) {
         this.name = name;
     }
+
+    public List<UIItem> getUiItems() {
+        return uiItems;
+    }
+
+    public void setUiItems(List<UIItem> uiItems) {
+        this.uiItems = uiItems;
+    }
 }

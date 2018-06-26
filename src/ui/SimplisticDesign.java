@@ -12,8 +12,6 @@ public class SimplisticDesign extends Design {
 
     public void init() {
         System.out.println("Initializing " + name + "...");
-//        button = itemFactory.createButton();
-//        editBox = itemFactory.createEditBox();
-//        textBox = itemFactory.createTextBox();
+        uiItems = itemFactory.getUIItems();
     }
 }

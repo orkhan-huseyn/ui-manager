@@ -1,20 +1,14 @@
 package ui;
 
-import ui.items.Button;
-import ui.items.EditBox;
-import ui.items.TextBox;
+import ui.items.UIItem;
+import java.util.List;
 
 public abstract class Design {
 
     // name for showing on console
     String name;
     // concrete ui items will be decided by subclasses
-    // general button
-    Button button;
-    // general edit box
-    EditBox editBox;
-    // general text box
-    TextBox textBox;
+    List<UIItem> uiItems;
 
     // should be implemented by subclasses
     // initializes specified UI style

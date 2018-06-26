@@ -9,7 +9,7 @@ import ui.factory.SimplisticItemFactory;
 public class SimplisticUIStore extends UIStore {
 
     protected Design createDesign(ConfigManager config) {
-        ItemFactory itemFactory = new SimplisticItemFactory();
+        ItemFactory itemFactory = new SimplisticItemFactory(config);
         Design design = new SimplisticDesign(itemFactory);
         design.setName("Simplistic Design");
         return design;

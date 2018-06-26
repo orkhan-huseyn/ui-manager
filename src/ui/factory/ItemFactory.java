@@ -1,11 +1,9 @@
 package ui.factory;
 
-import ui.items.Button;
-import ui.items.EditBox;
-import ui.items.TextBox;
+import ui.items.UIItem;
+import java.util.List;
 
-public interface ItemFactory {
-    Button createButton(int x, int y, String value);
-    EditBox createEditBox(int x, int y, String value);
-    TextBox createTextBox(int x, int y, String value);
+public abstract class ItemFactory {
+
+    public abstract List<UIItem> getUIItems();
 }

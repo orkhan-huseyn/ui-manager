@@ -1,20 +1,12 @@
 package ui.factory;
 
-import ui.items.Button;
-import ui.items.EditBox;
-import ui.items.TextBox;
+import ui.items.UIItem;
+import java.util.ArrayList;
+import java.util.List;
 
-public class HighDetailedItemFactory implements ItemFactory {
-
-    public Button createButton(int x, int y, String value) {
-        return null;
-    }
-
-    public EditBox createEditBox(int x, int y, String value) {
-        return null;
-    }
-
-    public TextBox createTextBox(int x, int y, String value) {
+public class HighDetailedItemFactory extends ItemFactory {
+    @Override
+    public List<UIItem> getUIItems() {
         return null;
     }
 }

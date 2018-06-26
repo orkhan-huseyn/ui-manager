@@ -1,23 +1,30 @@
 package ui.factory;
 
-import ui.items.Button;
-import ui.items.EditBox;
-import ui.items.TextBox;
-import ui.items.simplistic.SimplisticButton;
-import ui.items.simplistic.SimplisticEditBox;
-import ui.items.simplistic.SimplisticTextBox;
+import config.ConfigManager;
+import ui.items.UIItem;
 
-public class SimplisticItemFactory implements ItemFactory {
+import java.util.ArrayList;
+import java.util.List;
 
-    public Button createButton(int x, int y, String value) {
-        return new SimplisticButton(x, y, value);
+public class SimplisticItemFactory extends ItemFactory {
+
+    private ConfigManager configManager;
+
+    public SimplisticItemFactory(ConfigManager configManager) {
+        this.configManager = configManager;
     }
 
-    public EditBox createEditBox(int x, int y, String value) {
-        return new SimplisticEditBox(x, y, value);
-    }
+    public List<UIItem> getUIItems() {
 
-    public TextBox createTextBox(int x, int y, String value) {
-        return new SimplisticTextBox(x, y, value);
+        List<UIItem> uiItemList = new ArrayList<>();
+
+        while (configManager.hasMoreItems()) {
+
+            String line = configManager.nextItem();
+            String[] arr = line.split(",");
+
+        }
+
+        return uiItemList;
     }
 }

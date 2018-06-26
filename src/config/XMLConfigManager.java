@@ -8,12 +8,10 @@ public class XMLConfigManager implements ConfigManager {
         this.filePath = filePath;
     }
 
-    @Override
     public String nextItem() {
         return null;
     }
 
-    @Override
     public boolean hasMoreItems() {
         return false;
     }
